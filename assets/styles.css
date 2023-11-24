@@ -36,17 +36,18 @@ a {
 .btn-primary:hover {
   opacity: 0.7;
 }
-
+/****Header***/
 header {
   background-color: #b4d0e7;
   height: calc(100%-50px);
 }
-
+/****Navigation *****/
 nav {
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
 }
 
 nav ul.nav_left,
@@ -54,24 +55,26 @@ nav ul.nav_right {
   display: flex;
   align-items: center;
   gap: 1rem;
+  height: 100%;
 }
 nav ul.nav_left li,
 nav ul.nav_right li {
-  padding-block: 10px;
-  display: inline-block;
+  padding-top: 35px;
   color: black;
   font-weight: 300;
   height: 100%;
 }
 
-nav li:hover:not(nav ul.nav_left li:first-child) {
+nav li:hover {
   border-bottom: 1px solid black;
 }
 
-nav li:hover:not(nav ul.nav_right li:last-child) {
-  border-bottom: 1px solid black;
+nav ul.nav_left li:first-child:hover,
+nav ul.nav_right li:last-child:hover {
+  border: none;
 }
 
+/*jumbotron------------------- */
 .jumbotron,
 main .wrapper,
 footer .wrapper {
@@ -88,7 +91,6 @@ h1 {
 .jumbotron .container {
   display: flex;
   margin-top: 2rem;
-  padding: 10px;
 }
 
 .jumbotron .container .cta {
@@ -118,7 +120,8 @@ h1 {
 }
 
 .jumbotron .container figure img {
-  height: calc(100%+50px);
+  height: calc(100% + 60px);
   position: absolute;
   top: 0;
 }
+/*********main***********/
