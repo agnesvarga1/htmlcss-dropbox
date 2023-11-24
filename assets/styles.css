@@ -10,6 +10,10 @@ html {
   font-family: "Lato", sans-serif;
 }
 
+img {
+  display: inline-block;
+}
+
 ul {
   list-style-type: none;
 }
@@ -26,6 +30,7 @@ a {
 .btn-primary {
   color: white;
   background-color: #0061ff;
+  border: none;
 }
 
 .btn-primary:hover {
@@ -34,7 +39,7 @@ a {
 
 header {
   background-color: #b4d0e7;
-  min-height: 70vh;
+  height: calc(100%-50px);
 }
 
 nav {
@@ -42,36 +47,78 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
 }
 
 nav ul.nav_left,
 nav ul.nav_right {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+nav ul.nav_left li,
+nav ul.nav_right li {
+  padding-block: 10px;
+  display: inline-block;
+  color: black;
+  font-weight: 300;
+  height: 100%;
 }
 
-nav li {
-  padding: 10px;
+nav li:hover:not(nav ul.nav_left li:first-child) {
+  border-bottom: 1px solid black;
+}
+
+nav li:hover:not(nav ul.nav_right li:last-child) {
+  border-bottom: 1px solid black;
 }
 
 .jumbotron,
 main .wrapper,
 footer .wrapper {
-  min-height: 50vh;
   padding-top: 50px;
   width: 75%;
   margin: 0 auto;
-  border: 1px black solid;
-}
-.jumbotron .container {
-  display: flex;
 }
 
-.jumbotron .container:first-child {
+h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+}
+
+.jumbotron .container {
+  display: flex;
+  margin-top: 2rem;
+  padding: 10px;
+}
+
+.jumbotron .container .cta {
   width: 30%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cta button {
+  width: 50%;
+}
+#arr-icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.jumbotron svg {
+  height: 3.5rem;
 }
 
 .jumbotron .container figure {
-  width: 70%;
+  position: relative;
+  height: 60vh;
+}
+
+.jumbotron .container figure img {
+  height: calc(100%+50px);
+  position: absolute;
+  top: 0;
 }
