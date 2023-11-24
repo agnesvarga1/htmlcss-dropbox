@@ -76,8 +76,7 @@ nav ul.nav_right li:last-child:hover {
 
 /*jumbotron------------------- */
 .jumbotron,
-main .wrapper,
-footer .wrapper {
+.wrapper {
   padding-top: 50px;
   width: 75%;
   margin: 0 auto;
@@ -125,3 +124,55 @@ h1 {
   top: 0;
 }
 /*********main***********/
+
+main .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding-inline: 5%;
+}
+h2 {
+  font-weight: 700;
+}
+.radios {
+  display: flex;
+  font-size: 14px;
+  gap: 10px;
+}
+
+.radio {
+  width: 14px;
+  height: 14px;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+.radio:hover {
+  border: 3px solid #0061ff;
+}
+
+/*******section1 cards*/
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 15px;
+}
+
+.card {
+  min-height: 50vh;
+  flex-basis: calc((100% / 3) - 10px);
+  border: 1px solid gray;
+}
+.card-header {
+  padding: 10px;
+  text-align: center;
+}
+
+.card svg {
+  height: 1rem;
+}
+.card:last-child {
+  flex-basis: 100%;
+}
