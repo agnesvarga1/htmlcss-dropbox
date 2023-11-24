@@ -104,7 +104,7 @@ h1 {
 }
 #arr-icon {
   position: absolute;
-  bottom: 0;
+  bottom: 1px;
   left: 0;
 }
 
