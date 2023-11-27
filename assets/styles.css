@@ -28,6 +28,10 @@ a {
   padding: 5px 10px;
 }
 
+.btn:hover {
+  cursor: pointer;
+}
+
 .btn-primary {
   color: white;
   background-color: rgba(0, 97, 255, 1);
@@ -82,7 +86,6 @@ nav ul.nav_right li:last-child:hover {
 /*jumbotron------------------- */
 .jumbotron,
 .wrapper {
-  padding-top: 50px;
   width: 75%;
   margin: 0 auto;
 }
@@ -275,6 +278,10 @@ hr {
   border-right: 1px solid gray;
 }
 
+.text-box button:hover {
+  color: rgba(0, 0, 0, 0.692);
+}
+
 /**section 3  ***/
 #section-3 .card {
   border: none;
@@ -302,8 +309,7 @@ hr {
 /**** section 4***/
 #section-4 .container {
   display: flex;
-  background-color: aquamarine;
-  min-height: 60vh;
+  height: 70vh;
   margin-top: 2rem;
 }
 
@@ -319,4 +325,74 @@ hr {
 #section-4 .container .partners .partner-logo {
   width: 50%;
   height: 50%;
+  display: flex;
+
+  align-items: center;
 }
+#section-4 .container .partners .partner-logo figure {
+  width: 40%;
+  height: 35%;
+  margin: 0 auto;
+}
+#section-4 .container .partners .partner-logo svg {
+  width: 100%;
+  height: 100%;
+  fill: white;
+}
+
+#section-4 .container .middle {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: auto;
+}
+
+#section-4 .container .middle figure {
+  width: 50%;
+}
+
+#section-4 .container .middle figure svg {
+  height: 6rem;
+  width: 100%;
+}
+
+#section-4 .container .middle hr {
+  margin-left: 5px;
+  margin-block: 40px;
+}
+
+#section-4 .container .middle span {
+  margin-top: 40px;
+}
+
+/**middle part **/
+
+/* section 4 h2 btn*/
+#section-4 .wrapper {
+  height: 40vh;
+  padding: 0;
+}
+#section-4 .wrapper .container {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+#section-4 .wrapper .container h2 {
+  flex-basis: 50%;
+  font-size: 2.8rem;
+  color: #61082b;
+}
+
+#section-4 .wrapper .container button {
+  border: none;
+  padding: 10px 20px;
+}
+
+#section-4 .wrapper .container button:hover {
+  color: rgba(0, 0, 0, 0.685);
+}
+
+/*-------FAQ*/
