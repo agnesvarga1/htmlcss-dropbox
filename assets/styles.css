@@ -388,7 +388,7 @@ hr {
 /* section 4 h2 btn*/
 #section-4 .wrapper {
   height: 40vh;
-  padding: 0;
+  padding: 0 5%;
 }
 #section-4 .wrapper .container {
   flex-direction: row;
@@ -417,16 +417,62 @@ hr {
 .faq {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  justify-content: flex-start;
+  padding-top: 60px;
 }
-
+.faq h2 {
+  font-size: 2rem;
+}
 .faq .question {
-  padding: 20px;
+  padding-block: 25px;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid black;
 }
 
+#q1 {
+  border-top: 1px solid #d2d2d5;
+}
+
 .faq .wrapper .question-box:last-child {
   border-bottom: 1px solid #d2d2d5;
+}
+/********* Footer *******/
+
+footer {
+  background-color: #000;
+  color: #fff;
+  margin-top: 50px;
+  padding-block: 30px;
+}
+
+footer .wrapper .container {
+  display: flex;
+  gap: 35px;
+  width: 100%;
+}
+
+footer .wrapper .container .footer-col {
+  width: calc((100% / 5));
+}
+
+footer .wrapper .container .footer-col ul {
+  line-height: 1.5;
+}
+footer .wrapper .container .footer-col h4 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+footer .wrapper .container .footer-col ul li {
+  padding-block: 5px;
+}
+
+footer .wrapper .container .footer-col ul li a {
+  color: #fff;
+}
+
+footer hr {
+  color: #d2d2d5;
+  margin: 1.5rem 0;
+  width: 10%;
 }
