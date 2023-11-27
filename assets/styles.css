@@ -211,6 +211,21 @@ h2 {
   color: #2626f1;
 }
 
+#section-1 .cards .card-body li {
+  display: flex;
+  align-items: center;
+}
+
+#section-1 .cards .card-body li img {
+  height: 12px;
+  margin-right: 0.5rem;
+}
+
+.share-icon {
+  margin-top: 5px;
+  align-self: flex-start;
+}
+
 hr {
   margin-block: 0.5rem;
   margin-left: 1rem;
@@ -231,17 +246,19 @@ hr {
 }
 
 /**  enterprise card   ***/
+
+#section-1 .card:last-child .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 #section-1 .card:last-child .top button {
   width: 40%;
-  height: 30px;
 }
 
 #section-1 .card:last-child .card-body {
   padding: 1rem;
-}
-#section-1 .card:last-child .top {
-  display: flex;
-  justify-content: space-between;
 }
 
 #section-1 .card:last-child .top p {
@@ -396,3 +413,20 @@ hr {
 }
 
 /*-------FAQ*/
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.faq .question {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid black;
+}
+
+.faq .wrapper .question-box:last-child {
+  border-bottom: 1px solid #d2d2d5;
+}
