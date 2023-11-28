@@ -114,6 +114,10 @@ h1 {
   width: 50%;
 }
 
+#arr-icon:hover {
+  transform: translatey(20px);
+}
+
 .jumbotron svg {
   margin-top: 3rem;
   height: 3rem;
@@ -206,6 +210,10 @@ h2 {
   width: 100%;
 }
 
+#section-1 button .arr-right {
+  margin-left: 10px;
+}
+
 #section-1 a {
   text-decoration: underline;
   color: #2626f1;
@@ -224,6 +232,24 @@ h2 {
 .share-icon {
   margin-top: 5px;
   align-self: flex-start;
+}
+
+.buy-now {
+  padding-block: 10px;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+#section-1 .card .cards .buy-now .arr-right {
+  display: inline-block;
+  color: #2626f1;
+  margin: 5px 3px 0;
+  transform: all ease 2s;
+}
+
+.arr-right:hover {
+  transform: translateX(10px);
 }
 
 hr {
@@ -323,7 +349,7 @@ hr {
   color: #2626f1;
 }
 
-/**** section 4***/
+/**** section 4 partners***/
 #section-4 .container {
   display: flex;
 
@@ -357,7 +383,7 @@ hr {
   height: 100%;
   fill: white;
 }
-
+/**middle part **/
 #section-4 .container .middle {
   padding: 20px;
   display: flex;
@@ -383,8 +409,6 @@ hr {
 #section-4 .container .middle span {
   margin-top: 40px;
 }
-
-/**middle part **/
 
 /* section 4 h2 btn*/
 #section-4 .wrapper {
