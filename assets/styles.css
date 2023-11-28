@@ -366,6 +366,10 @@ hr {
   flex-wrap: wrap;
 }
 
+#p1 {
+  border: 10px solid #d1e9cd;
+}
+
 #section-4 .container .partners .partner-logo {
   width: 50%;
   height: 50%;
